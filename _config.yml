@@ -19,7 +19,7 @@ sass:
 nav:
  - name: "About"
    link: "/cv-blog/"
- - name: "Blog"
+ - name: "Writings"
    link: "/cv-blog/blog"
  - name: "Resume"
    link: "/cv-blog/resume.pdf"
