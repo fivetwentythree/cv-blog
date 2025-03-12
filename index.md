@@ -12,7 +12,7 @@ This is a jekyll based resume template. You can find the full source code on [Gi
 
 ## Research Interest
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
+Your limbic system controls it. It wants to tell you how worried it is about you, but it has no mouth, only a gun, which it cocks point blank all day, shaking, shooting when you make even the smallest mistake. With each recoil it weeps. It hates hurting you, but it knows the pain you’ve been through because it felt it too, and in moments of desperation it learned that disfiguring you with its bullets has a chance of stopping you from getting hurt even more.
 
 ## Publications
 
