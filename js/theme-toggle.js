@@ -6,6 +6,22 @@ function initThemeToggle() {
     // Add theme toggle button styles
     const style = document.createElement('style');
     style.textContent = `
+        .theme-toggle-container {
+            display: inline-flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .theme-toggle-container {
+                margin: 0;
+                position: absolute;
+                right: 60px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
         .theme-toggle {
             position: relative;
             width: 36px;
@@ -16,7 +32,7 @@ function initThemeToggle() {
             cursor: pointer;
             transition: background-color 0.3s;
             -webkit-tap-highlight-color: transparent;
-            margin: 0 0 0 10px;
+            margin: 0;
             vertical-align: middle;
             display: inline-flex;
             align-items: center;
