@@ -2,7 +2,29 @@
  * Customization Variables
  */
 
-$accent: #FF0F00;
+:root[data-theme="light"] {
+    --accent: #FF0F00;
+    --bg-color: #ffffff;
+    --text-color: #272727;
+    --link-color: var(--accent);
+    --border-color: rgba(0, 0, 0, 0.1);
+    --code-bg: #f8f8f8;
+}
+
+:root[data-theme="dark"] {
+    --accent: #FF6B6B;
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --link-color: var(--accent);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --code-bg: #1a1a1a;
+}
+
+:root {
+    color-scheme: light dark;
+}
+
+$accent: var(--accent);
 $image-size: 85px;
 
 /*
