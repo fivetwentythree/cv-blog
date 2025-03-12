@@ -2,14 +2,6 @@
 layout: default
 ---
 
-## About Me
-
-<img class="profile-picture" src="sherlock.jpg">
-
-Hi! I am a junior year student of B.E. Computer Science at Birla Institute of Technology and Science, Pilani.
-
-This is a jekyll based resume template. You can find the full source code on [GitHub](https://github.com/bk2dcradle/researcher)
-
 ## Research Interest
 
 Your limbic system controls it. It wants to tell you how worried it is about you, but it has no mouth, only a gun, which it cocks point blank all day, shaking, shooting when you make even the smallest mistake. With each recoil it weeps. It hates hurting you, but it knows the pain you’ve been through because it felt it too, and in moments of desperation it learned that disfiguring you with its bullets has a chance of stopping you from getting hurt even more.
