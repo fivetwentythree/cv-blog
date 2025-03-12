@@ -1,10 +1,7 @@
 ---
 layout: default
-title: Blog
+title: Writings
 ---
-
-# Blog Posts
-
 <ul class="blog-posts">
   {% for post in site.posts %}
     <li>
