@@ -1,98 +1,23 @@
 @import "vars";
+html{height:100%;margin:0;padding:0}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";height:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:$accent}
+a:hover{text-decoration:underline}
+hr{border:0;height:0;border-top:1px solid rgba(0,0,0,.1);border-bottom:1px solid rgba(255,255,255,.3)}
 
-/*
- * Basic
- */
+#author-name{font-size:1em;color:#272727;display:inline-block}
+.navbar{padding:50px 0}
+.navbar-ul{display:inline-block;margin:0;padding:5px 0;margin-left:20px}
+.nav-list{list-style-type:none;margin:0 5px 0 10px}
+.alignable{display:inline-block}
+.pull-left{@extend .alignable;float:left}
+.pull-right{@extend .alignable;float:right}
 
-html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    height: 100%;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-}
-a {
-    text-decoration: none;
-    color: $accent;
-}
-a:hover {
-    text-decoration: underline;
-}
-hr {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-/*
- * Navbar
- */
-
-#author-name {
-    font-size: 1em;
-    color: #272727;
-    display: inline-block;
-}
-.navbar {
-    padding: 50px 0 50px 0;
-}
-.navbar-ul {
-    display: inline-block;
-    margin: 0;
-    padding: 5px 0 5px 0;
-    margin-left: 20px;
-}
-.nav-list {
-    list-style-type: none;
-    margin: 0 5px 0 10px;
-}
-.alignable {
-    display: inline-block;
-}
-.pull-left {
-    @extend .alignable;
-    float: left;
-}
-.pull-right {
-    @extend .alignable;
-    float: right;
-}
-
-/* Divs */
-
-.container {
-    max-width: $max-width;
-    margin: auto;
-}
-.wrapper {
-    min-height: 100%;
-}
-
-/* Institute Image */
-
-#ins-logo {
-	margin: auto;
-	display: block;
-	max-height: 100px;
-	text-align: center;
-}
-
-/* Mobile */
-
-@media (max-width: 800px) {
-    .container {
-        max-width: $med-width;
-        transition: 0.3s ease all;
-    }
-}
-
-@media (max-width: 650px) {
+.container{max-width:$max-width;margin:auto}
+.wrapper{min-height:100%}
+#ins-logo{margin:auto;display:block;max-height:100px;text-align:center}
+@media (max-width:800px){.container{max-width:$med-width;transition:.3s ease all}}
+@media (max-width:650px){
     .container {
         max-width: 83%;
     }
@@ -125,7 +50,7 @@ hr {
 		float: none;
 	}
 	#navlist li.nav-list {
-		margin: 0;
+		float: none;
 	}
 }
 
