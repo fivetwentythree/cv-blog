@@ -1,60 +1,82 @@
-# Researcher
+# Personal Research Blog
 
-### [Demo Website](http://ankitsultana.com/researcher)
+A minimalist Jekyll-based blog for sharing research insights, technical discussions, and academic observations.
 
-A clean, single column, monospace resume template built for jekyll
+## Features
 
-### Installation
+- Clean and responsive design
+- Dark/Light mode toggle
+- Blog post categorization
+- Markdown support for easy content creation
+- Resume/CV integration
+- Contact page
 
-Simply fork the repository and edit away.
+## Tech Stack
 
-#### Installation via remote themes
+- Jekyll 3.9.5
+- GitHub Pages
+- SCSS for styling
+- JavaScript for theme toggling
 
-* Just setting `remote_theme: ankitsultana/researcher@gem` in `_config.yml` should work. Although in that case, I am not sure how
-you would build your site locally for testing. If you know how, open up an issue and let me know.
-* For more info, [refer this](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/).
+## Local Development
 
-### Customization
+### Prerequisites
 
-* You can edit the `.md` (markdown) files as you see fit. You can also add some other markdown file, say `foo.md` in the root directory of the repository. It will then be accessible like so `{{ url of your website }}/foo`.
+- Ruby (2.7.0 or higher)
+- RubyGems
+- Bundler
 
-* You can of course remove `contact.md` if you don't want it
+### Setup
 
-* To set the heading, edit the `title` variable in `_config.yml`
+1. Clone the repository
+   ```bash
+   git clone <repository-url>
+   cd researcher
+   ```
 
-* To edit the `links` mentioned on the navigation bar, you can edit `_config.yml`. For example:
+2. Install dependencies
+   ```bash
+   bundle install
+   ```
 
+3. Run the development server
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. Visit `http://localhost:4000` in your browser
+
+## Creating Blog Posts
+
+Add new blog posts to the `_posts` directory using the following format:
+
+```markdown
+---
+layout: post
+title: "Your Post Title"
+date: YYYY-MM-DD
+categories: [category1, category2]
+---
+
+Your content here...
 ```
-nav:
- - name: "About"
-   link: "/researcher/"
- - name: "Resume"
-   link: "resume.pdf"
- - name: "Contact"
-   link: "contact"
+
+## Deployment
+
+This site is configured to deploy automatically to GitHub Pages. Simply push your changes to the main branch:
+
+```bash
+git add .
+git commit -m "Your commit message"
+git push origin main
 ```
 
-* You can change the accent (color of hyperlinks) by editing the `accent` variable in `_sass/vars.scss`
+## Customization
 
-* You can setup google analytics, by setting `tracking_id` in `_config.yml`
+- Edit `_config.yml` to update site settings
+- Modify styles in `_sass` directory
+- Update layout templates in `_layouts` directory
 
-* To add a profile picture, make sure to give the image tag the class `profile-picture`. In other words,do it like so:
+## License
 
-```html
-<img class="profile-picture" src="sherlock.jpg">
-```
-
-* You can remove/customize the footer as you like by setting the
-appropriate variables in `_config.yml`
-
-* (New in v1.2.0) You can add institute logo at the top, by setting `ins_logo` in `_config.yml`. If you want
-to adjust the logo's size, try setting `max-height` in `#ins-logo` in file `./_sass/_style.scss` to the desired
-value
-
-![Institute Logo Image Sample](https://github.com/ankitsultana/assets/raw/master/ins-logo-sample.png)
-
-**Note:** Customizing the accent color might cause merge conflicts if you later try to merge from `bk2dcradle/researcher` to fetch updates/patches etc. (applicable only if you have forked).
-
-### License
-
-[GNU GPL v3](https://github.com/bk2dcradle/researcher/blob/gh-pages/LICENSE)
+This project is open source and available under the [MIT License](LICENSE).
