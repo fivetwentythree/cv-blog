@@ -1,6 +1,6 @@
 title: Researcher
-url: "https://ankitsultana.com"
-baseurl: "/researcher"
+url: "https://fivetwentythree.github.io"
+baseurl: "/cv-blog"
 remote_theme: ankitsultana/researcher@gem
 
 markdown: kramdown
@@ -9,8 +9,8 @@ markdown: kramdown
 tracking_id: #
 
 footer: yes
-footer_url: "https://github.com/ankitsultana"
-footer_text: "Page design by Ankit Sultana"
+footer_url: "https://fivetwentythree.github.io"
+footer_text: "Page design by Lochana"
 
 sass:
     style: compressed
