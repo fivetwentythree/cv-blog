@@ -47,7 +47,7 @@ function initThemeToggle() {
             height: 16px;
             background-color: #FFFFFF;
             border-radius: 50%;
-            transition: transform 0.3s, background-color 0.3s;
+            transition: transform 0.3s;
         }
         
         .theme-toggle[aria-checked="true"] {
@@ -56,25 +56,6 @@ function initThemeToggle() {
         
         .theme-toggle[aria-checked="true"]::after {
             transform: translateX(16px);
-        }
-        
-        @media (hover: hover) {
-            .theme-toggle:hover {
-                background: rgba(120, 120, 128, 0.42);
-            }
-            
-            .theme-toggle[aria-checked="true"]:hover {
-                background: var(--accent);
-                opacity: 0.8;
-            }
-        }
-        
-        .theme-toggle:active::after {
-            width: 20px;
-        }
-        
-        .theme-toggle[aria-checked="true"]:active::after {
-            transform: translateX(12px);
         }
     `;
     document.head.appendChild(style);
