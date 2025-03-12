@@ -5,13 +5,18 @@ title: Blog
 
 # Blog Posts
 
-<ul>
+<ul class="blog-posts">
   {% for post in site.posts %}
     <li>
-      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <h2>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        {% if post.draft %}
+          <span class="draft-tag">Draft</span>
+        {% endif %}
+      </h2>
       <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
       {% if post.description %}
-        <p>{{ post.description }}</p>
+        <p class="post-description">{{ post.description }}</p>
       {% endif %}
     </li>
   {% endfor %}
