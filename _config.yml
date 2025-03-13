@@ -21,7 +21,7 @@ nav:
    link: "/cv-blog/"
  - name: "Writings"
    link: "/cv-blog/blog"
- - name: "Resume"
+ - name: "CV"
    link: "/cv-blog/resume.pdf"
  - name: "Contact"
    link: "/cv-blog/contact"
