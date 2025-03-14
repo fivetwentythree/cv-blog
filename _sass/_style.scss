@@ -1,6 +1,6 @@
 @import "vars";
 html{height:100%;margin:0;padding:0}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";height:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;background-color:var(--bg-color);color:var(--text-color);position:relative}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-weight:500;height:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;background-color:var(--bg-color);color:var(--text-color);position:relative}
 .container{position:relative;background:var(--bg-color);padding:20px;margin-top:20px}
 a{text-decoration:none;color:var(--link-color)}
 a:hover{text-decoration:underline}
@@ -17,6 +17,10 @@ hr{border:0;height:0;border-top:1px solid var(--border-color)}
 .container{max-width:$max-width;margin:auto}
 .wrapper{min-height:100%}
 #ins-logo{margin:auto;display:block;max-height:100px;text-align:center}
+
+@media (min-width:800px){
+    .container{max-width:$max-width;margin:auto}
+}
 
 @media (max-width:650px){
     .container{max-width:83%}
